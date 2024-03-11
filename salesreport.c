@@ -39,6 +39,7 @@ void year_max_sort(double* sales, char* months[])
 
 void load_report(double* month_data)
 {
+    //TODO: make it so that users can input different text files
     FILE *fptr;
 
     char fname[] = "sales_test.txt";
@@ -145,10 +146,6 @@ int main()
 
     load_report(month_data);
     generate_report(month_data);
-
-    char ch;
-    printf("Press Any Key to Continue\n");  
-    scanf("%c", ch);
     
     return 0;
 }
